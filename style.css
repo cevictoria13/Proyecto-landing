@@ -118,7 +118,7 @@ form{
 
 
 .button-banner{
-    background-color: #4c57af;
+  background-color: #4c57af;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -131,40 +131,34 @@ form{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
    /*section*/
 
-
-
-.contenedor{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 0;    
-    justify-content: center;
-}
 
 .contenedor_cards{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     align-items: center;
-}
-
-
-.contenedor_cards img{
-    width: 400px;
-    height: 250px;   
-    margin: 10px; 
+    padding: 40px 0; 
 }
 
 .imagen-card{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px 0;
-       
+    align-items: center;
+    padding: 20px 0;  
+    margin: auto;  
 }
- 
+
+.contenedor_cards img{
+    width: 400px;
+    height: 250px;   
+    margin: auto; 
+    align-items: center;
+}
+
 
 .button-card{
   background-color: #4c57af;
@@ -175,7 +169,7 @@ form{
   align-items: center;
   text-decoration: none;
   font-size: 16px;
-  
+  margin: 10px;
   cursor: pointer;
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
@@ -207,28 +201,46 @@ form{
 
 
 .contenedor-servicios{
-    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;  
     padding: 40px 20px;  
+    width: 100%;
     
 }
 
 .servicios{
-    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+   flex-direction: column;
+   padding: 20px 0;
+   align-items: center;
+   margin: auto;
 }
 
 .servicios img{
     width: 400px;
     height: 250px;   
-    margin: 10px; 
+    margin: auto; 
+    align-items: center;
 }
 
-
+.button-serv{
+    background-color: #4c57af;
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 10px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    width: 100%;
+  }
 
 h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -243,11 +255,12 @@ h3{
 
 form{
  padding: 10px 15px;
+ background-color: rgb(52, 189, 68);
 }
 
-.form{
-  width  : 40%;
-  height : auto;
+.form-contact{
+  width  : 400%;
+  height : 400px;
   padding: 10px 25px;
   box-sizing: border-box;
   position: relative;
@@ -255,6 +268,7 @@ form{
   grid-gap : 20px;
   grid-template-columns : repeat(2, 1fr);
   grid-template-rows    : 10em 1em 1em 1em;
+  background-color: rgb(52, 189, 68);
 }
 
 .button-form{
@@ -271,22 +285,23 @@ form{
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
   height: 40px;
+  
 }
 
 
 #Nombre{
     color: #fff;
-    padding: 8px 0;
+    margin: 8px 0;
 }
 
 #Apellido{
     color: #fff;
-    padding: 8px 0;
+    margin: 8px 0;
 }
 
 #correo{
     color: #fff;
-    padding: 8px 0;
+    margin: 8px 0;
 }
 
 #celular{
@@ -296,9 +311,7 @@ form{
 
 #mensaje{
     color: #fff;
-    margin: 8px 0;
-    display: flex;
-    align-items: center;
+    margin: 8px 0;   
 }
 
 details {
@@ -331,7 +344,7 @@ details[open] summary {
     margin-bottom: 0.5em;    
 }
 
-/*comen*/
+/*footer*/
 
 footer {
     display: flex;
@@ -339,4 +352,21 @@ footer {
     width: 100%;
     height: 400px;
     background-color: rgb(52, 189, 68);
+}
+
+
+
+
+/*responsive*/
+
+@media screen and (max-width:750px){
+    .contenedor-banner img{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .contenedor-banner img{
+        width: 350px;
+    }
 }
