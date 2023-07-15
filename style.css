@@ -19,15 +19,15 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
     justify-content: center;
-    width: 100%;
-    color: #fff;
-   
+    width: 40%;
+    color: #fff ;
+    font-size: 20px;
 }
 
 .tamaño-título{
     color: #fff;
+    font-size: ;
 }
-
 
 
 .contenedor-principal{
@@ -45,13 +45,14 @@ body{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .contenedor-principal nav{
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 0 20px;
 }
 
         /*jumbotron*/
@@ -206,7 +207,7 @@ form{
     flex-wrap: wrap;  
     padding: 40px 20px;  
     width: 100%;
-    
+    height: auto;
 }
 
 .servicios{
@@ -255,27 +256,26 @@ h3{
 
 form{
  padding: 10px 15px;
- background-color: rgb(52, 189, 68);
+  
 }
 
 .form-contact{
-  width  : 400%;
-  height : 400px;
-  padding: 10px 25px;
+  width  : 450px;
+  height : auto;
+  padding: 25px 25px;
   box-sizing: border-box;
   position: relative;
-  display  : grid;
-  grid-gap : 20px;
-  grid-template-columns : repeat(2, 1fr);
-  grid-template-rows    : 10em 1em 1em 1em;
+  display: flex ;
+  gap : 20px;
   background-color: rgb(52, 189, 68);
+  margin: 10px;
 }
 
 .button-form{
-    background-color: #4c57af;
+  background-color: #4c57af;
   border: none;
   color: white;
-  display: inline-block;
+  display: flex;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -285,74 +285,92 @@ form{
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
   height: 40px;
-  
+  align-items: center;
 }
+
 
 
 #Nombre{
     color: #fff;
-    margin: 8px 0;
+    margin: 8px 4px;
 }
 
 #Apellido{
     color: #fff;
-    margin: 8px 0;
+    margin: 8px 4px;
 }
 
 #correo{
     color: #fff;
-    margin: 8px 0;
+    margin: 8px 4px;
 }
 
 #celular{
     color: #fff;
-   margin: 8px 0;
+   margin: 8px 4px;
 }
 
 #mensaje{
     color: #fff;
-    margin: 8px 0;   
+    margin: 10px 4px;   
+    justify-content: center;
 }
 
-details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
-.detalles{
-    color: #fff;
-    padding: 0 40px;
-    width: 100%;
-}
 
-summary {
-    font-weight: bold;
-    padding: 0.5em;
-    
-}
-details[open] {
-    padding: 0.5em;
-    
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 0.5em;    
-}
 
 /*footer*/
 
-footer {
+footer{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     height: 400px;
     background-color: rgb(52, 189, 68);
 }
+
+.detalles{
+    color: #fff;
+    padding: 20px 20px;
+    width: 30%;
+    
+    
+    margin: 0 20px;
+}
+
+.detalles-segundo{
+    color: #fff;
+    padding: 20px 20px;
+    width: 30%;
+        text-decoration: none;
+    margin: 0 20px;
+}
+
+
+
+.footer-down{
+    
+   padding: 20px 40px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+
+.fa-brands.fa-facebook{
+gap: 20px;
+display: flex;
+flex-wrap: wrap;
+width: 20px;
+}
+
+.fa-brands.fa-instagram{
+    gap: 20px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
 
 
 
